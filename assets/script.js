@@ -4,10 +4,10 @@ var generate = document.querySelector("#generate")
 var clear = document.querySelector("#clear")
 
 generate.addEventListener("click", function generate() {
-    if (textInput.value.startsWith("http")) {
+    if (textInput.value.length > 0) {
         returnQr.innerHTML = ""
         returnQr.insertAdjacentHTML('afterbegin', /*html*/`
-        <img src="https://www.qrtag.net/api/qr_transparent_360.png?url=${textInput.value}" alt="qr code" id="qr-image">
+        <img src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl=${textInput.value}" alt="qr code" id="qr-image">
         `)
     } else {
         returnQr.innerHTML = ""
