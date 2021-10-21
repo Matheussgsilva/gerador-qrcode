@@ -12,8 +12,8 @@ generate.addEventListener("click", function generate() {
     } else {
         returnQr.innerHTML = ""
         returnQr.insertAdjacentHTML("afterbegin", /*html*/ `
-        <p>Endereço inválido</p>
-        <p>O Endereço deve começar com: https://www ou http://www</p>
+        <p>Campo vazio!</p>
+        <p>Insira o texto ou URL que deseja gerar o código.</p>
         `)
     }
 })
@@ -21,4 +21,7 @@ generate.addEventListener("click", function generate() {
 clear.addEventListener("click", function clear() {
     textInput.value = ""
     returnQr.innerHTML = ""
+    returnQr.insertAdjacentHTML("afterbegin", /*html*/ `
+    <p>Aguardando...</p><br><p>O QR code aparecerá aqui!</p>
+    `)
 })
