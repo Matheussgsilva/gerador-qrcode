@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Press+Start+2P&display=swap');
+
+:root {
+    --font-body: 'Fira Code', monospace;
+    --font-title: 'Press Start 2P', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+header {
+    font-family: var(--font-title);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+}
+
+#return-qr {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
